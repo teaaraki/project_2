@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// Recipe information
+//Recipe information
 const recipes = {
     recipe1: { title: "Banana Bread", content: ` <h3>Ingredients</h3>
     <ul>

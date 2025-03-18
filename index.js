@@ -4,10 +4,11 @@ const recipesRoutes = require("./routes/recipes");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-// Use external routes for recipes
+
+// Uses external routes for recipes
 app.use("/recipes", recipesRoutes);
 
-
+//displays homepage
 app.get("/", (req, res) => {
     res.render("index");
 });
