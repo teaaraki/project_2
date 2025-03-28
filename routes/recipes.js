@@ -1,9 +1,12 @@
+//here's all the recipes, the link to different pages
+
 const express = require("express");
 const router = express.Router();
 
 //Recipe information
 const recipes = {
-    recipe1: { title: "Banana Bread", content: ` <h3>Ingredients</h3>
+    recipe1: {
+        title: "Banana Bread", content: ` <h3>Ingredients</h3>
     <ul>
         <li>1 3/4 cups all-purpose flour</li>
         <li>1 teaspoon baking soda</li>
@@ -49,7 +52,8 @@ const recipes = {
         <li>Room temperature eggs mix together better.</li>
         <li>If you want the optional ingredients, mix in the spices with the dry ingredients. The chocolate or nuts are folded in at the end before your pour the batter into the loaf pan.</li>
     </ul>` },
-    recipe2: { title: "Chocolate Cheesecake", content: `<h3>Ingredients</h3>
+    recipe2: {
+        title: "Chocolate Cheesecake", content: `<h3>Ingredients</h3>
     <h4>For the Crust</h4>
     <ul>
         <li>1 and 1/2 cups Chocolate Wafer Crumbs</li>
@@ -122,7 +126,9 @@ const recipes = {
         <li>When using the waterbath, preheat oven first, then place your pan on it (empty) and then fill it with boiling water. Place the cheesecake (wrapped in foil in its pan) in the center.</li>
         <li>If you don't want to use a water bath, a pan of water in the rack underneath the cheesecake may work fine. You may still get cracks, but since the ganache covers it, it's alright.</li>
     </ul>` },
-    recipe3: { title: "48 Hour Chocolate Chip Cookies", content: `<h3>Ingredients</h3>
+    recipe3: {
+        title: "48 Hour Chocolate Chip Cookies",
+        content: `<h3>Ingredients</h3>
 
     <h4>Toffee</h4>
     <ul>
